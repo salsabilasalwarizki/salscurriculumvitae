@@ -335,7 +335,7 @@
 
     .timeline {
       position: relative;
-      padding-left: 50px;
+      padding-left: 60px;
       margin: 25px 0;
     }
 
@@ -708,7 +708,7 @@
       }
       
       .profile-header {
-        padding: 60px 40px;
+        padding: 40px 30px;
       }
     }
 
@@ -776,46 +776,98 @@
         padding: 0 10px;
       }
       
+      .cv-title h1 {
+        font-size: 1.3rem;
+      }
+      
+      .profile-header {
+        padding: 25px 15px;
+      }
+      
+      .profile-content {
+        gap: 20px;
+      }
+      
+      .profile-img-wrapper {
+        min-width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+      }
+      
+      .profile-img {
+        border-width: 6px;
+        max-width: 180px;
+      }
+      
+      .profile-img img {
+        max-width: 180px;
+      }
+      
+      .profile-info {
+        min-width: 100%;
+        text-align: center;
+      }
+      
       .name {
-        font-size: 2.3rem;
+        font-size: 2rem;
       }
       
       .title {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
+        display: block;
+      }
+      
+      .title::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
       }
       
       .bio {
         font-size: 0.95rem;
+        margin: 20px auto;
+        max-width: 100%;
       }
       
       .contact-info {
         flex-direction: column;
         gap: 10px;
+        justify-content: center;
       }
       
       .contact-item {
         width: 100%;
         justify-content: center;
+        font-size: 1rem;
+      }
+      
+      .contact-item i {
+        width: 30px;
+        height: 30px;
+        font-size: 1.1rem;
       }
       
       .social-icons {
         justify-content: center;
         gap: 10px;
+        margin-top: 20px;
       }
       
       .social-icons a {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
         font-size: 1.2rem;
       }
       
       .tags {
         gap: 8px;
+        justify-content: center;
+        flex-wrap: wrap;
       }
       
       .tag {
-        padding: 7px 15px;
-        font-size: 0.85rem;
+        padding: 6px 14px;
+        font-size: 0.8rem;
       }
       
       .section {
@@ -872,5 +924,4 @@
 
     .section:nth-child(even) .animate {
       animation-delay: 0.4s;
-
     }
